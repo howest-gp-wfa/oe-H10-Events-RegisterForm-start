@@ -1,30 +1,30 @@
 "use strict";
 
 //declare globals
-var txtUsername,txtPassword,txtRepeatPassword;
-var btnRegister;
-var divFeedback;
+let inpUsername,inpPassword,inpRepeatPassword;
+let btnRegister;
+let divFeedback;
 
 //wait for load
 window.addEventListener('load',Initialize);
 
 function Initialize()
 {
-   BindElements();
-   AddEventListeners();
-    ResetUi();
+   bindElements();
+   addEventListeners();
+    resetUi();
 }
 
-function BindElements()
+function bindElements()
 {
-    txtUsername = document.querySelector('#txtUsername');
-    txtPassword = document.querySelector('#pwbPassword');
-    txtRepeatPassword = document.querySelector('#pwbRepeatPassword');
+    inpUsername = document.querySelector('#inpUsername');
+    inpPassword = document.querySelector('#pwbPassword');
+    inpRepeatPassword = document.querySelector('#pwbRepeatPassword');
     btnRegister = document.querySelector('#btnRegister');
     divFeedback = document.querySelector('#divFeedback')
 }
 
-function AddEventListeners()
+function addEventListeners()
 {
     
 }
@@ -32,7 +32,7 @@ function AddEventListeners()
 // FUNCTIONS
 
 
-function ResetUi()
+function resetUi()
 {
     //reset all inputs
     document.querySelectorAll('input').forEach(el => {el.value = ''});
@@ -41,20 +41,20 @@ function ResetUi()
     //empty feedback
     divFeedback.innerHTMl = '';
     //setfocus
-    txtUsername.focus();
+    inpUsername.focus();
 }
 
-function ValidateForm()
+function validateForm()
 {
    
 }
 
-function ValidatePasswords()
+function validatePasswords()
 {
     
 }
 
-function ValidateEmail()
+function validateEmail()
 {
     
 }
