@@ -8,15 +8,13 @@ let divFeedback;
 //wait for load
 window.addEventListener('load',Initialize);
 
-function Initialize()
-{
+function Initialize() {
    bindElements();
    addEventListeners();
    resetUi();
 }
 
-function bindElements()
-{
+function bindElements() {
     inpUsername = document.querySelector('#inpUsername');
     inpPassword = document.querySelector('#pwbPassword');
     inpRepeatPassword = document.querySelector('#pwbRepeatPassword');
@@ -24,16 +22,14 @@ function bindElements()
     divFeedback = document.querySelector('#divFeedback')
 }
 
-function addEventListeners()
-{
+function addEventListeners() {
     
 }
 
 // FUNCTIONS
 
 
-function resetUi()
-{
+function resetUi() {
     //reset all inputs
     document.querySelectorAll('input').forEach(el => {el.value = ''});
     //disable button
@@ -44,18 +40,15 @@ function resetUi()
     inpUsername.focus();
 }
 
-function validateForm()
-{
+function validateForm() {
    
 }
 
-function validatePasswords()
-{
+function validatePasswords() {
     
 }
 
-function validateEmail()
-{
+function validateEmail() {
     
 }
 
