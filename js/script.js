@@ -12,7 +12,7 @@ function Initialize()
 {
    bindElements();
    addEventListeners();
-    resetUi();
+   resetUi();
 }
 
 function bindElements()
