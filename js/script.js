@@ -39,7 +39,7 @@ function resetUi()
     //disable button
     btnRegister.disabled = true;
     //empty feedback
-    divFeedback.innerHTMl = '';
+    divFeedback.innerHTML = '';
     //setfocus
     inpUsername.focus();
 }
