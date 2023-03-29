@@ -6,9 +6,9 @@ let btnRegister;
 let divFeedback;
 
 //wait for load
-window.addEventListener('load',Initialize);
+window.addEventListener('load', initialize);
 
-function Initialize() {
+function initialize() {
    bindElements();
    addEventListeners();
    resetUi();
@@ -19,7 +19,7 @@ function bindElements() {
     inpPassword = document.querySelector('#pwbPassword');
     inpRepeatPassword = document.querySelector('#pwbRepeatPassword');
     btnRegister = document.querySelector('#btnRegister');
-    divFeedback = document.querySelector('#divFeedback')
+    divFeedback = document.querySelector('#divFeedback');
 }
 
 function addEventListeners() {
@@ -27,8 +27,6 @@ function addEventListeners() {
 }
 
 // FUNCTIONS
-
-
 function resetUi() {
     //reset all inputs
     document.querySelectorAll('input').forEach(el => {el.value = ''});
